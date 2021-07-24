@@ -9,11 +9,7 @@ function nameValidate(){
         $('#name').css({'border':'solid 1px red'})
 		username= false
 	}
-	else if(namevalue==" "){
-		$('#name-error').html("Do not enter space as first character")
-        $('#name').css({'border':'solid 1px red'})
-		username=false
-	}
+	
 	else if(namevalue.length < 3)
 	{
 	     $('#name-error').html("Minimum 3 characters required !!!");
@@ -33,11 +29,7 @@ function nameValidate(){
             $('#name').css({'border':'solid 1px white'})
             username=true
         }
-        else{
-            $('#name-error').html("Invalid name !!!")
-            $('#name').css({'border':'solid 1px red'})
-            username=false
-        }
+        
         }
 
 function phoneValidate(){

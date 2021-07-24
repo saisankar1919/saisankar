@@ -554,7 +554,7 @@
                      <form method="post" id="submit-form">
                         <div class="row">
                             <div class="col-md-4">
-                                <input class="form-control" oninput="this.value=this.value.replace(/[^a-z]/g,'')" onkeyup="nameValidate()" id="name" name="name" placeholder="Full Name" type="text">
+                                <input class="form-control" oninput="this.value=this.value.replace(/[^A-Za-z-,.;'&/.() ]|^ /g,'')" onkeyup="nameValidate()" id="name" name="name" placeholder="Full Name" type="text">
                                 <p id="name-error" style="color: red;font-style: italic;"></p>
                             </div>
                             <div class="col-md-4">
