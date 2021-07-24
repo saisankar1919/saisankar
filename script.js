@@ -10,19 +10,6 @@ function nameValidate(){
 		username= false
 	}
 	
-	else if(namevalue.length < 3)
-	{
-	     $('#name-error').html("Minimum 3 characters required !!!");
-         $('#name').css({'border':'solid 1px red'})
-         username=false;
-    	}
-
-
-        else if(namevalue.length>20){
-            $('#name-error').html("Exceeded the maximum character !!!");
-            $('#name').css({'border':'solid 1px red'})
-            username= false;
-        }
      
         else if(namevalue.match(letters)){
             $('#name-error').html("")
@@ -51,17 +38,12 @@ function phoneValidate(){
         {
             if(namevalue.match(letters))
             {
-              $("#phone-error").html("Type ten numbers")
+              $("#phone-error").html("Invalid phone number!!")
               $('#phone').css({'border':'solid 1px white'})
               phone= false;
 
             }
-            else 
-            {
-              $("#phone-error").html("Use only numbers")
-              $('#phone').css({'border':'solid 1px red'})
-              phone=false;
-            }
+            
          }
     else if(namevalue.length>10)
     {
